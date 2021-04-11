@@ -47,7 +47,6 @@ li {
 }
 
 .item {
-  max-height: 435px;
   display: flex;
   justify-content: space-between;
 }
@@ -90,6 +89,8 @@ main p {
   text-align: left;
   margin: 0;
   transform-origin: left;
+  margin-top: -8px;
+  margin-bottom: -11px;
 }
 
 table {
@@ -101,6 +102,8 @@ table {
   border-collapse: collapse;
   margin: 0;
   transform-origin: left;
+  margin-top: -10px;
+  margin-bottom: -18px;
 }
 
 .noborder {
@@ -108,7 +111,7 @@ table {
 }
 
 table th, table td {
-  border: solid 1px #BBB;
+  border: solid 1px #999;
   padding: 8px 0px;
 }
 
@@ -163,4 +166,5 @@ footer {
   font-size: 10px;
   transform: scale(0.6);
   color: gray;
+  margin-top: 28px;
 }
