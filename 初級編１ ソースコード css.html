@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://code-step.com/ec-code/?path=demo/html/ec/css/&file=style_css&lang=css -->
+<html lang="ja"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>【ソースコード】初級編：ECサイト／商品ページ | Codestep（コードステップ）</title>
+<meta name="description" content="【ソースコード】初級編：ECサイト／商品ページ の、ソースコード（HTML、CSS、JavaScriptなど）を掲載しています。">
+<meta name="keywords" content="HTML ソースコード">
+
+<!-- OGP設定 -->
+<meta property="og:title" content="【ソースコード】初級編：ECサイト／商品ページ">
+<meta property="og:description" content="【ソースコード】初級編：ECサイト／商品ページ の、ソースコード（HTML、CSS、JavaScriptなど）を掲載しています。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://code-step.com/ec-code/">
+<meta property="og:image" content="https://code-step.com/wp-content/uploads/2020/08/mainvisual-s.jpg">
+<meta property="og:site_name" content="Codestep">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@codestep_com">
+
+<link rel="shortcut icon" href="https://code-step.com/wp-content/themes/code-step/img/favicon/favicon.ico">
+
+  <link rel="canonical" href="https://code-step.com/ec-code/">
+
+  <!-- 構造化マークアップ -->
+  <script type="text/javascript" async="" src="./初級編１ ソースコード css_files/analytics.js.ダウンロード"></script><script async="" src="./初級編１ ソースコード css_files/uh.js.ダウンロード"></script><script async="" src="./初級編１ ソースコード css_files/gtm.js.ダウンロード"></script><script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://code-step.com/ec-code/"
+      },
+      "headline": "【ソースコード】初級編：ECサイト／商品ページ",
+      "description": "",
+      "image": "https://code-step.com/wp-content/uploads/2020/08/mainvisual-s.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "ken"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Codestep",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://code-step.com/wp-content/themes/code-step/img/common/logo_text_icon-publisher-logo.png"
+        }
+      },
+      "datePublished": "2021-03-03",
+      "dateModified": "2021-03-03"
+    },
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Codestep",
+        "item": "https://code-step.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "【ソースコード】初級編：ECサイト／商品ページ",
+        "item": "https://code-step.com/ec-code/"
+      }]
+    }
+  ]
+</script>
+      <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NC5QXB4');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- User Heat Tag -->
+    <script type="text/javascript">
+    (function(add, cla){window['UserHeatTag']=cla;window[cla]=window[cla]||function(){(window[cla].q=window[cla].q||[]).push(arguments)},window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul,tag);})('//uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uhPEC1cWq2'});
+    </script>
+    <!-- End User Heat Tag -->
+  
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/code-step.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./初級編１ ソースコード css_files/wp-emoji-release.min.js.ダウンロード" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="contact-form-7-css" href="./初級編１ ソースコード css_files/styles.css" media="all">
+<link rel="stylesheet" id="contact-form-7-confirm-css" href="./初級編１ ソースコード css_files/styles(1).css" media="all">
+<link rel="stylesheet" id="ress-css" href="./初級編１ ソースコード css_files/ress.min.css" media="all">
+<link rel="stylesheet" id="style-css" href="./初級編１ ソースコード css_files/style.css" media="all">
+<link rel="stylesheet" id="highlight-atom-css" href="./初級編１ ソースコード css_files/atom-one-dark.min.css" media="all">
+<link rel="stylesheet" id="lightbox-css" href="./初級編１ ソースコード css_files/lightbox.css" media="all">
+<link rel="stylesheet" id="singular-css" href="./初級編１ ソースコード css_files/singular.css" media="all">
+<script src="./初級編１ ソースコード css_files/jquery.min.js.ダウンロード" id="jquery-js"></script>
+<script src="./初級編１ ソースコード css_files/highlight.min.js.ダウンロード" id="highlight-js"></script>
+<link rel="canonical" href="https://code-step.com/ec-code/">
+<link rel="shortlink" href="https://code-step.com/?p=267">
+</head>
+
+<body>
+      <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC5QXB4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+  <!-- ヘッダー -->
+  
+
+<div id="source-code" class="container">
+  <main>
+    <div class="wrapper-960">
+  <article id="article">
+    <h1>【ソースコード】初級編：ECサイト／商品ページ</h1><h2>style.css</h2><pre><span class="code-lang">style.css</span>
+<code class="css hljs">
+<span class="hljs-keyword">@charset</span> <span class="hljs-string">"UTF-8"</span>;
+
+<span class="hljs-selector-tag">html</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">100%</span>;
+}
+<span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.75rem</span>;
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Raleway'</span>, sans-serif;
+}
+<span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
+  <span class="hljs-attribute">text-decoration</span>: none;
+}
+<span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+}
+<span class="hljs-selector-tag">li</span> {
+  <span class="hljs-attribute">list-style</span>: none;
+}
+<span class="hljs-selector-tag">table</span> {
+  <span class="hljs-attribute">border-collapse</span>: collapse;
+  <span class="hljs-attribute">border-spacing</span>: <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-class">.site-title</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">109px</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">36px</span> auto;
+}
+<span class="hljs-selector-class">.site-title</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">display</span>: block;
+}
+<span class="hljs-selector-class">.wrapper</span> {
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">800px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+
+<span class="hljs-comment">/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/</span>
+<span class="hljs-selector-id">#header</span> {
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1000px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">46px</span> <span class="hljs-number">0</span> <span class="hljs-number">26px</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-number">50px</span> auto;
+  <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#c3c3c3</span>;
+}
+<span class="hljs-selector-tag">nav</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">justify-content</span>: space-between;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.menu</span>,
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.login</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">align-items</span>: center;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.menu</span> <span class="hljs-selector-tag">li</span> {
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">14px</span>;
+}
+<span class="hljs-selector-tag">nav</span> <span class="hljs-selector-class">.login</span> <span class="hljs-selector-tag">li</span> {
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">14px</span>;
+}
+
+<span class="hljs-comment">/*-------------------------------------------
+商品ページ
+-------------------------------------------*/</span>
+<span class="hljs-selector-id">#item</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">justify-content</span>: space-between;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">100px</span>;
+}
+<span class="hljs-comment">/*
+flex-shrink: 0;
+画像が縮小されるのを防ぐ
+*/</span>
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-image</span> {
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">400px</span>;
+  <span class="hljs-attribute">flex-shrink</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">60px</span>;
+}
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.9</span>;
+}
+<span class="hljs-comment">/*
+「display: flex;」と「align-items: center;」で、
+高さを中央にそろえる
+*/</span>
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.item-title</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">border-top</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#c3c3c3</span>;
+  <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#c3c3c3</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
+  <span class="hljs-attribute">font-weight</span>: bold;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+}
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.order-table</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">20px</span>;
+}
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.order-table</span> <span class="hljs-selector-class">.color</span>,
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.order-table</span> <span class="hljs-selector-class">.size</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">20%</span>;
+}
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.order-table</span> <span class="hljs-selector-class">.quantity</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">60%</span>;
+}
+<span class="hljs-comment">/*
+テーブルの線は重ならないように設定（外枠なしのレイアウト）
+１．tdの上を設定
+*/</span>
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.order-table</span> <span class="hljs-selector-tag">td</span> {
+  <span class="hljs-attribute">border-top</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#c3c3c3</span>;
+}
+<span class="hljs-comment">/*
+２．th、tdの右を設定
+*/</span>
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.order-table</span> <span class="hljs-selector-tag">th</span>,
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.order-table</span> <span class="hljs-selector-tag">td</span> {
+  <span class="hljs-attribute">font-weight</span>: normal;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">border-right</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#c3c3c3</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+}
+<span class="hljs-comment">/*
+３．th、tdの最後だけ右の線を消す
+*/</span>
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.order-table</span> <span class="hljs-selector-tag">th</span><span class="hljs-selector-pseudo">:last-child</span>,
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.order-table</span> <span class="hljs-selector-tag">td</span><span class="hljs-selector-pseudo">:last-child</span> {
+  <span class="hljs-attribute">border-right</span>: none;
+}
+<span class="hljs-comment">/*
+-moz-appearance: menulist;
+-webkit-appearance: menulist;
+セレクトボックスに右端の矢印を表示
+*/</span>
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.order-table</span> <span class="hljs-selector-tag">select</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">border</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#c3c3c3</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">-moz-appearance</span>: menulist;
+  <span class="hljs-attribute">-webkit-appearance</span>: menulist;
+}
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.cart-btn</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#4B4B4B</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">18px</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+}
+<span class="hljs-comment">/*
+テーブルの線は重ならないように設定（外枠ありのレイアウト）
+１．テーブルの上と左に設定
+*/</span>
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.size-table</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">border-top</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#c3c3c3</span>;
+  <span class="hljs-attribute">border-left</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#c3c3c3</span>;
+}
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.size-table</span> <span class="hljs-selector-class">.size</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">16%</span>;
+}
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.size-table</span> <span class="hljs-selector-class">.chest</span>,
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.size-table</span> <span class="hljs-selector-class">.weist</span>,
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.size-table</span> <span class="hljs-selector-class">.height</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">28%</span>;
+}
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.size-table</span> <span class="hljs-selector-tag">th</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ecebeb</span>;
+}
+<span class="hljs-comment">/*
+２．th、tdの右と下に設定
+*/</span>
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.size-table</span> <span class="hljs-selector-tag">th</span>,
+<span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> <span class="hljs-selector-class">.size-table</span> <span class="hljs-selector-tag">td</span> {
+  <span class="hljs-attribute">font-weight</span>: normal;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">border-right</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#c3c3c3</span>;
+  <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-number">1px</span> <span class="hljs-number">#c3c3c3</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+}
+
+<span class="hljs-comment">/*-------------------------------------------
+フッター
+-------------------------------------------*/</span>
+<span class="hljs-selector-id">#footer</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-id">#footer</span> <span class="hljs-selector-class">.copyright</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.625rem</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+}
+
+<span class="hljs-comment">/*-------------------------------------------
+SP
+-------------------------------------------*/</span>
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width:</span> <span class="hljs-number">896px</span>) {
+
+  <span class="hljs-selector-class">.site-title</span> {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">26px</span>;
+  }
+
+  <span class="hljs-comment">/*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/</span>
+  <span class="hljs-selector-id">#header</span> {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">border-bottom</span>: none;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">36px</span> <span class="hljs-number">16px</span> <span class="hljs-number">16px</span> <span class="hljs-number">16px</span>;
+  }
+  <span class="hljs-comment">/*
+  横スクロールできるようにする
+  */</span>
+  <span class="hljs-selector-tag">nav</span> {
+    <span class="hljs-attribute">overflow-x</span>: scroll;
+  }
+
+  <span class="hljs-comment">/*-------------------------------------------
+  商品ページ
+  -------------------------------------------*/</span>
+  <span class="hljs-selector-id">#item</span> {
+    <span class="hljs-attribute">flex-direction</span>: column;
+  }
+  <span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-image</span> {
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
+  }
+  <span class="hljs-selector-id">#item</span> <span class="hljs-selector-class">.item-info</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">16px</span>;
+  }
+}
+</code>
+</pre>
+  </article>
+</div>  </main>
+</div>
+
+  <script id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/code-step.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script src="./初級編１ ソースコード css_files/scripts.js.ダウンロード" id="contact-form-7-js"></script>
+<script src="./初級編１ ソースコード css_files/jquery.form.min.js.ダウンロード" id="jquery-form-js"></script>
+<script src="./初級編１ ソースコード css_files/scripts.js(1).ダウンロード" id="contact-form-7-confirm-js"></script>
+<script src="./初級編１ ソースコード css_files/main.js.ダウンロード" id="main-js"></script>
+<script src="./初級編１ ソースコード css_files/lightbox.js.ダウンロード" id="lightbox-js"></script>
+<script src="./初級編１ ソースコード css_files/singular.js.ダウンロード" id="singular-js"></script>
+
+<div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" aria-label="Previous image" href="https://code-step.com/ec-code/?path=demo/html/ec/css/&amp;file=style_css&amp;lang=css"></a><a class="lb-next" aria-label="Next image" href="https://code-step.com/ec-code/?path=demo/html/ec/css/&amp;file=style_css&amp;lang=css"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>
